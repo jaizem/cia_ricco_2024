@@ -1,0 +1,19 @@
+.coming-soon{
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    height:500px;
+    padding:40px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+#lotus{
+    margin: 0 auto;
+}
+
+#clicky{
+    color: black;
+    text-decoration: none;
+}

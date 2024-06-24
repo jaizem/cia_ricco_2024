@@ -1,0 +1,398 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    color: black;
+}
+ 
+.container {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 180px;
+    padding: 20px;
+    background-color: #8fd7d5;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    border-right: #FF7847; /*update to be a bkgd image*/
+    border-width: 10px;
+    border-right-style:dotted;
+    border-spacing: 2px;
+    
+}
+
+.sidebar a {
+    display: block;
+    color:black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: white79;
+    color:black;
+}
+
+.book-button {
+    margin-top: 20px;
+}
+
+.content {
+    margin-left: 220px;
+    flex: 1;
+    background-image: url('../img/ginkgo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #347283;
+    /* Cerulean */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: white;
+    /* Alabaster with opacity */
+    margin-bottom:40px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/*BANNER*/
+.banner {
+    display: flex;
+    flex-direction: row;
+    background-color: #347283;
+    margin-bottom: 40px;
+    gap: 20px;
+    height:fit-content;
+}
+
+.banner-image{
+    width: 40%;
+}
+
+.banner-image img{
+    width:100%;
+}
+
+.banner-content {
+    justify-content: start;
+    margin-top:50px;
+    height: fit-content;
+    width: 60%;
+    text-align: left;
+    padding-left: 20px;
+    margin-left:30px;
+    border-left: 10px solid coral; /* Decorative vertical line */
+}
+
+.banner h1, .banner p, .banner .subtext {
+    color: white; /* Black text color */
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner .subtext {
+    font-size: 1em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: coral; /* Cerulean */
+    color: black; /* White font color */
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: rgb(218, 79, 29); /* Darker Cerulean for hover effect */
+}
+
+
+/*GALLERY*/
+.gallery-results {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.gallery-container {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.images {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery-img {
+    width: auto;
+    height: 400px;
+}
+
+.gallery-nav {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    background-color: #333;
+    border: none;
+    transition: background-color 0.5s;
+}
+
+.gallery-nav.left {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.gallery-nav.right {
+    right: 0%;
+    border-radius: 0 3px 3px 0;
+}
+
+.gallery-nav:hover {
+    background-color: #FF7847;
+}
+
+
+/*REGISTRATION*/
+.registration {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.registration h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.registration p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact-method a {
+    text-decoration: none;
+    color: #FF7847;
+    font-weight: bold;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
+
+/*FAQ*/
+.faqs {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.faq-content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faqs h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item .question {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq-item .answer {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.footer-container {
+    width: calc(100% - 260px);
+    margin-left: 220px;
+    padding: 20px;
+    background-color: rgb(52, 114, 131);
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-table {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column a {
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+.sitemap {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sitemap li {
+    margin: 5px 0;
+}
+
+.sitemap li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sitemap li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+}

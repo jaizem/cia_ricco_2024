@@ -1,0 +1,362 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*RSVP BANNER*/
+.cta-banner {
+    width: 100%;
+    background-color: #347283;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-width: 15px;
+    border-color: #FF7847;
+}
+
+.cta-banner p {
+    font-size: 1.5em;
+    margin: 0 0 20px 0;
+}
+
+.cta-button {
+    background-color: white;
+    color: #347283;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #d8d2cc;
+}
+
+
+/*HEADER*/
+.retreat-box {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.retreat-image {
+    padding: 20px;
+}
+
+
+/*INTRO*/
+.retreat-intro {
+    text-align: center;
+    background-color: white;
+}
+
+#lotus {
+    margin: 0 auto;
+    width: 150px;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+
+.retreat-intro h1 {
+    margin-bottom: 20px;
+}
+
+.retreat-intro .column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.retreat-intro .column p,
+.retreat-intro .column ul {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.retreat-intro .column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.footnote {
+    font-size: 0.9em;
+    color: #555;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.emphasized-quote {
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+    max-width: 800px;
+}
+
+
+/*ITINERARY*/
+.schedule {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.itinerary,
+.dates {
+    flex: 1;
+    max-width: 50%;
+}
+
+.itinerary {
+    padding-top: 40px;
+}
+
+.itinerary h1,
+.dates h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.day {
+    border-top: 1px solid #333;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.day h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    color: #347283;
+    margin: 0;
+}
+
+.day .activities {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.day .toggle {
+    font-size: 1.5em;
+    color: #FF7847;
+}
+
+.dates p,
+.dates ul {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.dates ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dates li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*TESTIMONIALS*/
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.testimonials h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.testimonial {
+    background: 347283;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: #FF7847;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: black;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial blockquote::before {
+    content: '“';
+    font-size: 3em;
+    color: #FF7847;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
+.testimonial blockquote::after {
+    content: '”';
+    font-size: 3em;
+    color: #FF7847;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+}
+
+.testimonial footer {
+    margin-top: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+
+/*TRAVEL INFO*/
+.travel-info {
+    padding: 40px;
+    background-color: white;
+}
+
+.travel-info h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.travel-content {
+    display: flex;
+    gap: 20px;
+}
+
+.travel-text,
+.travel-image {
+    flex: 1;
+}
+
+.travel-text p,
+.travel-text ul {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.travel-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.travel-text li {
+    margin-bottom: 10px;
+}
+
+.travel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+/*PROVIDERS*/
+.providers {
+    background-color: white;
+    text-align: center;
+}
+
+.provider-banner {
+    background-color: #347283;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.provider-banner h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.providers h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.provider-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.provider-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.provider-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.provider-content li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.emphasized-quote {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #EFE9DD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto 0;
+    width: calc(100% - 40px);
+}
