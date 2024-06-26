@@ -1,97 +1,70 @@
-/*HEADER BANNER*/
-.header {
-    text-align: center;
-    background-color: white;
-    padding:20px;
-    margin: 0 auto;
-    width: 73%;
-    border-radius: 5px;
-}
-
-.header h1 {
-    margin-top: 0;
-}
-
-.header p {
-    font-style: italic;
-    color: #555;
-}
 
 /*INTRO CONTAINER*/
-.intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: white;
-    width:73%;
+.video-intro {
+    display: flex;
+    width: 70%;
     margin: 0 auto;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color:rgb(118, 134, 94);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .intro-left {
-    padding: 20px;
+    width: 50%;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.video-intro h1{
+    color: black;
+    margin: 0;
+}
+
+.video-intro h2{
+    margin:0 auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+
+#leaf-motif{
+    margin: 0auto;
+    width:300px;
+    height:30px;
 }
 
 .intro-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro-video {
-    width: 100%;
-    height: 200px;
-    background-color: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*EVENTS CONTAINER*/
-.events-container {    
-    width:70%;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-.events {
-    display: flex;
-    justify-content: space-between;
-}
-
-.event-calendar {
-    width: 45%;
-}
-
-.event-calendar table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.event-calendar th, .event-calendar td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    width: 50%;
     text-align: center;
+    padding-left: 10px;
 }
 
-.event-list {
-    width: 45%;
+.intro-right iframe {
+    width: 100%;
+    height: 315px; /* Ensure video height is appropriate */
+    max-height: 315px;
 }
 
-.event-list ul {
-    list-style-type: none;
-    padding: 0;
+.intro-right p {
+    margin-top: 10px;
 }
 
-.event-list li {
-    background-color: #FFBF00;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 5px;
+.transcript-link {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    transition: color 0.3s ease;
 }
+
+.transcript-link:hover {
+    color: #00b0ad; /* Darker Cerulean for hover effect */
+}
+
+
 
 /*POPULAR SERVICES*/
 .services-container {
