@@ -171,7 +171,7 @@ section {
     justify-content: center;
     padding: 0 20px;
     width: 60%;
-    color: #fffecd;
+    color: white;
     border-left-style: solid;
     border-width: 20px;
     border-color:coral;
@@ -180,7 +180,7 @@ section {
 .banner h1 {
     font-size: 2em;
     margin: 0 0 10px;
-    color:#fffecd;
+    color:white;
 }
 
 .banner p {
