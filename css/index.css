@@ -72,10 +72,13 @@
 /*POPULAR SERVICES*/
 .services-container {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: white;
     width: 85%;
     margin: 0 auto 50px;
     border-radius: 5px;
+    border-style: solid;
+    border-width:1px;
+    border-color:rgb(118, 134, 94);
     text-align: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
@@ -136,35 +139,43 @@
 }
 
 
-/*MEDIA*/
-.media-container{
+/*archive*/
+.archive-container{
     text-align:center;
-    width:73%;
+    width:85%;
     margin:0 auto;
     padding: 20px;
     background-color: white;
     border-radius: 5px;
+    margin-bottom:50px;
 }
 
-.media-content {
+.archive-container h2{
+    margin: 5px;
+    padding:5px;
+}
+
+.archive-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    
 }
 
-.media-content h2 {
+.archive-content h2 {
     text-align: center;
 }
 
-.media {
+.archive {
+    margin:0;
+    padding:0;
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.media-box {
+.archive-box {
     flex: 1;
     padding: 10px;
     text-align: center;
@@ -176,17 +187,17 @@
     color: inherit;
 }
 
-.media-box h3{
+.archive-box h3{
     font-size:1.5em;
 }
 
-.media-box:hover,
-.media-box:active {
+.archive-box:hover,
+.archive-box:active {
     transform: scale(1.2);
 }
 
-.media-icon {
-    width: 100px;
-    height: auto;
+.archive-icon {
+    height: 200px;
+    width: auto;
     margin: 10px 0;
 }
