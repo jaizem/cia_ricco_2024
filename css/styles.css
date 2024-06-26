@@ -6,7 +6,7 @@ html {
     height: 100%;
     color: black;
 }
- 
+
 .container {
     display: flex;
     min-height: 100%;
@@ -14,37 +14,117 @@ html {
 }
 
 .sidebar {
-    width: 180px;
+    width: 260px;
     padding: 20px;
-    background-color: #8fd7d5;
+    background-color: #8fd7c3;
     height: 100%;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-    border-right: #FF7847; /*update to be a bkgd image*/
-    border-width: 10px;
-    border-right-style:dotted;
-    border-spacing: 2px;
-    
+    text-align: left;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo p {
+    margin: 0;
+}
+
+.logo i{
+    font-size: .8em;
+}
+
+
+#BYOR {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#BYOR p {
+    margin: 0;
+    font-size: 1em;
+}
+
+#BYOR i {
+    margin: 0;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #333;
 }
 
 .sidebar a {
     display: block;
-    color:black;
+    color: black;
     padding: 10px;
     text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
 }
 
 .sidebar a:hover {
-    background-color: white79;
-    color:black;
+    background-color: rgb(105, 162, 162);
+    color: black;
 }
 
 .book-button {
-    margin-top: 20px;
+    margin-top:20px;
+    text-align: center;
+    background-color: coral;
+    border-style:dotted;
+    border-width:5px;
+    border-color: pink;
+    border-radius: 5px;
 }
 
+.sidebar .book-button:hover {
+    background-color: rgb(218, 79, 29);
+}
+
+
+.media {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+}
+
+.media-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.media .media-item:hover {
+    background-color: rgb(105, 162, 162);
+}
+
+.media .media-icon {
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.media-item p {
+    margin: 0;
+    font-size: .8em;
+}
+
+
+
+
 .content {
-    margin-left: 220px;
+    margin-left: 300px;
     flex: 1;
     background-image: url('../img/ginkgo.png');
     background-size: cover;
@@ -67,7 +147,7 @@ h1 {
 section {
     background-color: white;
     /* Alabaster with opacity */
-    margin-bottom:40px;
+    margin-bottom: 40px;
     padding: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -80,30 +160,34 @@ section {
     background-color: #347283;
     margin-bottom: 40px;
     gap: 20px;
-    height:fit-content;
+    height: fit-content;
 }
 
-.banner-image{
+.banner-image {
     width: 40%;
 }
 
-.banner-image img{
-    width:100%;
+.banner-image img {
+    width: 100%;
 }
 
 .banner-content {
     justify-content: start;
-    margin-top:50px;
+    margin-top: 50px;
     height: fit-content;
     width: 60%;
     text-align: left;
     padding-left: 20px;
-    margin-left:30px;
-    border-left: 10px solid coral; /* Decorative vertical line */
+    margin-left: 30px;
+    border-left: 10px solid coral;
+    /* Decorative vertical line */
 }
 
-.banner h1, .banner p, .banner .subtext {
-    color: white; /* Black text color */
+.banner h1,
+.banner p,
+.banner .subtext {
+    color: white;
+    /* Black text color */
 }
 
 .banner h1 {
@@ -125,8 +209,10 @@ section {
 .learn-more-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: coral; /* Cerulean */
-    color: black; /* White font color */
+    background-color: coral;
+    /* Cerulean */
+    color: black;
+    /* White font color */
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 5px;
@@ -134,7 +220,8 @@ section {
 }
 
 .learn-more-button:hover {
-    background-color: rgb(218, 79, 29); /* Darker Cerulean for hover effect */
+    background-color: rgb(218, 79, 29);
+    /* Darker Cerulean for hover effect */
 }
 
 
