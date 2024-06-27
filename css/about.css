@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ea;
+    color: #333;
+}
+
+.timeline {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #bbd989;
+}
+
+.timeline h2 {
+    font-size: 2.5em;
+    color: #274a5e; /* Dark teal */
+    margin-bottom: 20px;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    order: 1;
+}
+
+.timeline-content, .timeline-image {
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.timeline-content {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.timeline-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-image h3 {
+    text-align: center;
+    margin-top: 10px;
+    color: #274a5e; /* Dark teal */
+}
+
+.timeline-dotted-line img {
+    width: 50%;
+    margin: 0 auto;
+}
