@@ -2,8 +2,28 @@ html{
     scroll-behavior: smooth;
 }
 
+.content{
+    background-image: url('../img/retreat-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0;
+}
+
+#content-section{
+    background-color: white;
+    width: 70%;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+#content-section h2{
+    text-align: center;
+}
+
 /*RSVP BANNER*/
 .cta-banner {
+    margin-bottom: 0;
     width: 100%;
     background-color: #347283;
     color: white;
@@ -36,20 +56,38 @@ html{
 
 
 /*HEADER*/
+.retreat-header{
+    margin-bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:500px;
+}
+
 .retreat-box {
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
 }
 
-.retreat-image {
-    padding: 20px;
+.retreat-content h1 {
+    background-color: rgb(255, 200, 0);
+    width: fit-content;
+    font-size: 2.5em;
+    padding: 10px;
 }
+
+.retreat-content i{
+    background-color: rgb(255, 200, 0);
+    width: fit-content;
+    padding: 10px;
+}
+
 
 
 /*INTRO*/
 .retreat-intro {
     text-align: center;
-    background-color: white;
+    color: rgb(0, 0, 0);
 }
 
 #lotus {
@@ -61,8 +99,7 @@ html{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 1000px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .retreat-intro h1 {
@@ -88,7 +125,6 @@ html{
 
 .footnote {
     font-size: 0.9em;
-    color: #555;
     width: 100%;
     margin-top: 20px;
 }
@@ -97,12 +133,12 @@ html{
     margin: 0 auto;
     font-size: 1.2em;
     font-style: italic;
-    color: #333;
     max-width: 800px;
 }
 
 
 /*ITINERARY*/
+
 .schedule {
     display: flex;
     justify-content: space-between;
@@ -170,14 +206,133 @@ html{
 }
 
 
+/*OPTIONAL ACTIVITIES SECTION*/
+.optional-activities-section {
+    background-color: #f4f4f9;
+    text-align: left;
+}
+
+.optional-activities-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.optional-activities-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #347283;
+}
+
+.optional-activities-container ul {
+    list-style-type: disc;
+    font-size: 1.2em;
+    color: #555;
+    padding-left: 20px;
+}
+
+.optional-activities-container ul li {
+    margin-bottom: 10px;
+}
+
+
+/*ADDITIONAL FEE SECTION*/
+.additional-fee-section {
+    background-color: #f4f4f9;
+    text-align: left;
+}
+
+.additional-fee-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.additional-fee-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #347283;
+}
+
+.additional-fee-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.additional-fee-container ul {
+    list-style-type: disc;
+    font-size: 1.2em;
+    color: #555;
+    padding-left: 20px;
+}
+
+.additional-fee-container ul li {
+    margin-bottom: 10px;
+}
+
+
+/*BENEFIT SECTION*/
+.benefit-section {
+    background-color: #f4f4f9;
+    text-align: left;
+}
+
+.benefit-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #347283;
+}
+
+.benefit-container p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.benefit-category {
+    margin-top: 20px;
+}
+
+.benefit-category h3 {
+    font-size: 1.8em;
+    color: #347283;
+    margin-bottom: 10px;
+}
+
+.benefit-category p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.benefit-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit-columns ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 20px;
+    width: 30%;
+}
+
+.benefit-columns ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
 
 
 
-/*TESTIMONIALS*/
+/* TESTIMONIALS */
 .testimonials {
     text-align: center;
-    padding: 50px 20px;
-    background-color: white;
 }
 
 .testimonials h1 {
@@ -187,15 +342,16 @@ html{
 
 .testimonial-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
 .testimonial {
-    background: 347283;
-    border-radius: 10px;
+    background: rgba(196, 196, 196, 0.34);
+    border-radius: 5px;
     padding: 20px;
-    width: calc(33.333% - 20px);
+    width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     display: flex;
@@ -203,20 +359,12 @@ html{
     align-items: center;
 }
 
-.testimonial-img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-    background-color: #FF7847;
-}
-
 .testimonial blockquote {
-    font-style: italic;
     color: black;
     position: relative;
     margin: 0;
     padding: 0;
+    text-align: justify;
 }
 
 .testimonial blockquote::before {
@@ -234,20 +382,33 @@ html{
     color: #FF7847;
     position: absolute;
     right: -10px;
-    bottom: -10px;
+    bottom: 10px;
 }
 
 .testimonial footer {
     margin-top: 20px;
     font-weight: bold;
     color: black;
+    text-align: right;
 }
 
+.testimonial img{
+    width:50px;
+}
+
+.testimonial p{
+    width:90%;
+    margin: 0 auto;
+    padding-top:10px;
+}
+
+.testimonial footer{
+    padding:10px;
+}
 
 /*TRAVEL INFO*/
 .travel-info {
     padding: 40px;
-    background-color: white;
 }
 
 .travel-info h1 {
@@ -289,14 +450,30 @@ html{
 }
 
 
+/*REGISTRATION*/
+.registration{
+    background-color: rgb(255, 203, 214);
+    color:black;
+}
+
+.registration a{
+    color:black;
+}
 
 
+/*FAQ*/
+.faq-content p {
+    font-size: 1.25em;
+}
+
+.question {
+    font-weight: bold;
+}
 
 
 
 /*PROVIDERS*/
 .providers {
-    background-color: white;
     text-align: center;
 }
 
@@ -324,7 +501,7 @@ html{
 
 .provider-content {
     text-align: left;
-    max-width: 800px;
+    width:90%;
     margin: 0 auto;
 }
 
