@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/retreat-info.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
@@ -55,6 +56,31 @@
         </div>
     </div>
 
+    <div class="navbar">
+        <div class="navbar-left">
+            <button class="dropdown-btn">&#9776;</button>
+            <div class="dropdown-content">
+                <a href="retreat-info.html">Upcoming Retreats</a>
+                <a href="coming-soon.html">Individual Intensives</a>
+                <a href="coming-soon.html" id="BYOR" class="sidebar-link">
+                    <p>BYOR! <i>Build Your Own Retreat</i></p>
+                </a><!--BYOR!-->
+                <a href="coming-soon.html">Support Groups</a>
+                <a href="coming-soon.html">Membership Courses</a>
+                <a href="coming-soon.html">Teens in Need</a>
+                <a href="coming-soon.html">About</a>
+                <a href="coming-soon.html">Ask Cia</a>
+                <a href="coming-soon.html">Contact</a>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <a href="index.html"><!--img src="img/lotus-icon.png" alt="Cia Ricco Logo" id="logo"--></a>
+        </div>
+        <div class="navbar-right">
+            <a href="coming-soon.html" class="book-appointment-btn">BOOK</a>
+        </div>
+    </div>
+
     <div class="content">
         <section class="retreat-header" style="background-image: url('img/meditation-earth.png');">
             <div class="retreat-box">
@@ -80,7 +106,6 @@
                     </p>
                     <img src="img/lotus-icon.png" id="lotus">
                     <p class="footnote">*Optional hallucinogenic medicines available</p>
-
                 </div>
                 <div class="column">
                     <p>This is a highly personalized, transformative retreat with skilled facilitator and body-centered
@@ -98,52 +123,42 @@
                 natural world, other beings, and your personal sense of the divine!</blockquote>
         </section>
 
-        <section id="content-section">
-            <h2>Retreat Highlights</h2>
-            <ul>
-                <li>Body-centered therapeutic techniques</li>
-                <li>Meditation, Movement, Breathwork</li>
-                <li>Healing & Trauma Release</li>
-                <li>Optional Psychedelic Experiences</li>
-            </ul>
-        </section>
-
-        <section id="content-section">
-            <h2>What’s Included</h2>
-            <ul>
-                <li>4 Nights Accommodation</li>
-                <li>All meals (healthy, fresh and delicious)</li>
-                <li>Morning Yoga</li>
-                <li>Creating Sacred Space</li>
-                <li>Setting Intentions and Journal Prompts</li>
-                <li>Introduction to and sampling of Essential Oils as Plant Medicine</li>
-                <li>Human Design (a system akin to astrology for self-discovery and understanding)</li>
-            </ul>
-        </section>
-
-        <section id="content-section">
-            <h2>What’s Not Included</h2>
-            <ul>
-                <li>Air Fare</li>
-                <li>Transportation to and from airport</li>
-            </ul>
-        </section>
-
-        <section id="content-section">
-            <h2>Optional Add-Ons</h2>
-            <ul>
-                <li>Therapeutic Massage</li>
-                <li>Reiki/Energy Work</li>
-                <li>Chinese Fire Cupping</li>
-                <li>Ayurvedic Principles</li>
-                <li>Cranial Sacral Work</li>
-                <li>Shiatsu Style (with option of floor mat session)</li>
-            </ul>
-        </section>
-
-        <section id="content-section">
-            <h2>Maximum Group Size</h2>
-            <p>20 guests</p>
+        <section id="content-section" class="retreat-details">
+            <h2>Retreat Details</h2>
+            <div class="details-container">
+                <div class="column">
+                    <h3>What's Included:</h3>
+                    <ul>
+                        <li>4 Nights Accommodation</li>
+                        <li>All Meals (Healthy, Fresh and Delicious)</li>
+                        <li>Morning Yoga</li>
+                        <li>Creating Sacred Space</li>
+                        <li>Setting Intentions and Journal Prompts</li>
+                        <li>Introduction and Sampling of Essential Oils as Plant Medicine</li>
+                        <li>Human Design <i style="font-size: .8em;">(a system akin to astrology for self-discovery and
+                                understanding)</i></li>
+                    </ul>
+                </div>
+                <div class="column" id="right">
+                    <h3>What's Not Included:</h3>
+                    <ul>
+                        <li>Air Fare</li>
+                        <li>Transportation to and from airport</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="add-ons-container">
+                <h3>Optional Add-Ons:</h3>
+                <i>*Additional fee associated</i>
+                <ul>
+                    <li><img src="img/massage-icon.png" alt="Therapeutic Massage Icon"> Therapeutic Massage</li>
+                    <li><img src="img/reiki-icon.png" alt="Reiki Icon"> Reiki/Energy Work</li>
+                    <li><img src="img/cupping-icon.png" alt="Chinese Fire Cupping Icon"> Chinese Fire Cupping</li>
+                    <li><img src="img/ayurvedic-icon.png" alt="Ayurvedic Principles Icon"> Ayurvedic Principles</li>
+                    <li><img src="img/cranial-icon.png" alt="Cranial Sacral Work Icon"> Cranial Sacral Work</li>
+                    <li><img src="img/shiatsu-icon.png" alt="Shiatsu Icon"> Shiatsu Style</li>
+                </ul>
+            </div>
         </section>
 
         <section id="content-section">
@@ -154,6 +169,8 @@
                 <li>Bunk (1 room 4 beds, 1 room 5 beds)</li>
                 <li>Dorm (9 beds)</li>
             </ul>
+            <p>Accomodations are first come, first serve</p>
+            <p>Rooms are going fast, so inquire now for room availability!</p>
         </section>
 
         <section id="content-section" class="food-section">
@@ -174,24 +191,25 @@
                 catered to, ensuring maximum nutritional value and tasting pleasure.</p>
         </section>
 
-
-
         <section id="content-section">
             <h2>Itinerary</h2>
             <div class="schedule">
                 <div class="dates">
-                    <h2>Dates</h2>
-                    <p>September 26th - 30th</p>
-                    <p>Join us for a 4-day immersive retreat.</p>
-                    <p>If you’re interested in a private or couple’s intensive with Cia instead of, or in addition to,
-                        the group retreat, she’s also offering a private 3-night stay in Woodstock, NY, on the following
-                        dates:</p>
-                    <ul>
-                        <li>September 18th-25th</li>
-                        <li>October 1st-8th.</li>
-                    </ul>
-                    <p>Inquire for more information on private intensives available before and after the group retreat.
-                    </p>
+                    <h2>September 26th - 30th</h2>
+                    <p>Join us for a 4-day immersive retreat. </p>
+                    <div class="extra">
+                        <p>If you’re interested in a private or couple’s intensive with Cia instead of, or in addition
+                            to,
+                            the group retreat, she’s also offering a private 3-night stay in Woodstock, NY, on the
+                            following
+                            date ranges:</p>
+                        <ul>
+                            <li>September 18th - 25th</li>
+                            <li>October 1st - 8th.</li>
+                        </ul>
+                        <i>*Inquire for more information on private intensives available before and after the group
+                            retreat.</i>
+                    </div>
                 </div>
                 <div class="itinerary">
                     <div class="day" onclick="toggleDay(this)">
@@ -252,46 +270,57 @@
             </div>
         </section>
 
-        <section id="content-section" class="additional-fee-section">
-            <div class="additional-fee-container">
-                <h2>Also Available at an Additional Fee</h2>
-                <p>THERAPEUTIC MASSAGE! (Availability is very limited. Please inquire & book well before the retreat!)
-                </p>
-                <p>Our therapist, Katy McLaughlin, is a Reiki Master who specializes in Magical Awakening Energy
-                    Healing. Katy is highly skilled with individualized restorative massage which may include:</p>
-                <ul>
-                    <li>Reiki/Energy Work</li>
-                    <li>Chinese Fire Cupping</li>
-                    <li>Ayurvedic Principles</li>
-                    <li>Cranial Sacral Work</li>
-                    <li>Shiatsu Style (with option of floor mat session)</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="content-section" id="gallery-results">
-            <h2>Photo Gallery</h2>
-            <div class="gallery">
-                <div class="gallery-container">
-                    <button class="gallery-nav left" onclick="changeSlide(-1)">&#10094;</button>
-                    <div class="images">
-                        <img src="img/bethel-ny-banner.webp" alt="Photo 1" class="gallery-img">
-                    </div>
-                    <button class="gallery-nav right" onclick="changeSlide(1)">&#10095;</button>
+        <section id="content-section" class="gallery">
+            <h2>Where You Will Be Staying</h2>
+            <div class="gallery-container">
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/bethel-ny-table.webp" id="gallery-img">
                 </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/bethel-ny-table.webp" id="gallery-img">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/bethel-ny-banner.webp" id="gallery-img">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/bethel-ny-banner.webp" id="gallery-img">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/bethel-ny-banner.webp" id="gallery-img">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/bethel-ny-banner.webp" id="gallery-img">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </section>
 
         <section id="content-section" class="benefit-section">
             <div class="benefit-container">
                 <h2>Who will benefit from attending the retreat?</h2>
-                <p>Participants come from two general categories: professionals, and those looking for personal growth.
+                <p>Participants come from two general categories: professionals, and those looking for personal
+                    growth.
                 </p>
                 <div class="benefit-category">
                     <h3>Professionals</h3>
                     <p>With an interest in gaining skills for use in their practice. All those in the helping
                         professions are welcome, including but not limited to:</p>
-                    <div class="benefit-columns">
+                    <div class="column-container">
                         <ul>
                             <li>Mental health professionals:
                                 <ul>
@@ -303,7 +332,7 @@
                             </li>
                         </ul>
                         <ul>
-                            <li>Healers such as:
+                            <li>Healers:
                                 <ul>
                                     <li>Energy workers</li>
                                     <li>Body-workers</li>
@@ -313,7 +342,7 @@
                             </li>
                         </ul>
                         <ul>
-                            <li>Those supporting anyone who may be dealing with pain and fear of death, such as:
+                            <li>End-of-Life Support:
                                 <ul>
                                     <li>Death doulas</li>
                                     <li>Hospice workers</li>
@@ -324,12 +353,16 @@
                 </div>
                 <div class="benefit-category">
                     <h3>Personal Growth and Empowerment</h3>
-                    <p>Is for anyone looking to go deeper in their healing, bring light to shadows, or simply explore
-                        what this rapid transformative work can provide. Personal growth may mean healing from trauma,
-                        breaking through addiction, depression, anxiety, dealing with chronic pain or fear, wanting new
+                    <p>Is for anyone looking to go deeper in their healing, bring light to shadows, or simply
+                        explore
+                        what this rapid transformative work can provide. Personal growth may mean healing from
+                        trauma,
+                        breaking through addiction, depression, anxiety, dealing with chronic pain or fear, wanting
+                        new
                         insights on life choices and directions, and wanting a greater sense of connection in their
                         lives.</p>
-                    <p>Personal growth may also mean coming for a deeper spiritual understanding of the greater whole
+                    <p>Personal growth may also mean coming for a deeper spiritual understanding of the greater
+                        whole
                         and a profound connection with All That Is.</p>
                 </div>
             </div>
@@ -351,7 +384,8 @@
             <ul>
                 <li>Expand your knowledge and understanding of psychedelics as powerful allies.</li>
                 <li>Learn new tools for helping clients heal from trauma and long-standing stuck patterns.</li>
-                <li>Gain facility with supporting clients through deeply transformative cathartic work with or without
+                <li>Gain facility with supporting clients through deeply transformative cathartic work with or
+                    without
                     the use of substances.</li>
             </ul>
         </section>
@@ -361,25 +395,36 @@
             <div class="testimonial-container">
                 <div class="testimonial">
                     <blockquote>
-                        <p>Cia put out so much energy, love, and care for each one of us during our time together. <b>I
+                        <p>Cia put out so much energy, love, and care for each one of us during our time together.
+                            <b>I
                                 am
-                                grateful for receiving so much more than I could have imagined from the retreat.</b> It
+                                grateful for receiving so much more than I could have imagined from the retreat.</b>
+                            It
                             was so
-                            wonderful to be in her presence--and take in the love and wisdom she shared with me and the
-                            group during the retreat.</p>
-                        <p>The group provided a great container to delve into deeper layers of my psychological stuff
-                            that were standing in the way of fully connecting with myself and the life around me. It was
-                            truly inspiring to experience the power of being in a group setting in the expanded states
+                            wonderful to be in her presence--and take in the love and wisdom she shared with me and
+                            the
+                            group during the retreat.
+                        </p>
+                        <p>The group provided a great container to delve into deeper layers of my psychological
+                            stuff
+                            that were standing in the way of fully connecting with myself and the life around me. It
+                            was
+                            truly inspiring to experience the power of being in a group setting in the expanded
+                            states
                             of consciousness with a gifted facilitator like you!</p>
                         <footer>Mi Seon Kang, LCAT, NYC</footer>
                     </blockquote>
                 </div>
                 <div class="testimonial">
                     <blockquote>
-                        <p><b>This experience has been transformative.</b> I know my life will never be the same. I am
-                            grateful for the incredible sense of community support that Cia created over the weekend.
-                            <b>The retreat brought so many life lessons and insights that I know will forever stay in my
-                                heart.</b> Cia’s love is abundant and unmatched. Thank you for opening up the doors to
+                        <p><b>This experience has been transformative.</b> I know my life will never be the same. I
+                            am
+                            grateful for the incredible sense of community support that Cia created over the
+                            weekend.
+                            <b>The retreat brought so many life lessons and insights that I know will forever stay
+                                in my
+                                heart.</b> Cia’s love is abundant and unmatched. Thank you for opening up the doors
+                            to
                             this new
                             way of seeing life.
                         </p>
@@ -390,8 +435,10 @@
                     <blockquote>
                         <p><b>I am so grateful for this work and the caring attention I received.</b> Thank you to
                             everyone
-                            involved for creating such a loving and safe environment, for modeling how to get your needs
-                            met, and for the vulnerability and the wisdom shared. Ibe will bring myself back to the love
+                            involved for creating such a loving and safe environment, for modeling how to get your
+                            needs
+                            met, and for the vulnerability and the wisdom shared. Ibe will bring myself back to the
+                            love
                             that I’ve been flooded with over the long weekend in future times of strife.</p>
                         <footer>Anna Kolp, LMSW, NYC</footer>
                     </blockquote>
@@ -399,12 +446,16 @@
                 <div class="testimonial">
                     <blockquote>
                         <p>This is powerful work with multiple approaches that go deep. I feel so fortunate and
-                            grateful for being part of this. <b>I learned so much about myself</b> and took away from it
+                            grateful for being part of this. <b>I learned so much about myself</b> and took away
+                            from it
                             that
-                            we are all deserving of both external and internal acceptance and love. I now believe that
+                            we are all deserving of both external and internal acceptance and love. I now believe
+                            that
                             everything happens as it needs to.</p>
-                        <p>I got a lot out of the breathwork and optional activities such as a class in essential oils.
-                            Most powerful of all was my individual time with Cia. <b>It was work I have not been able to
+                        <p>I got a lot out of the breathwork and optional activities such as a class in essential
+                            oils.
+                            Most powerful of all was my individual time with Cia. <b>It was work I have not been
+                                able to
                                 do
                                 alone.</b> I felt so “met”. My work with Cia and the group counteracted a hurt and
                             sadness that
@@ -414,7 +465,8 @@
                 </div>
                 <div class="testimonial">
                     <blockquote>
-                        <p><b>The retreat Exceeded my expectations.</b> Gratitude and acknowledgement to you, Cia, for
+                        <p><b>The retreat Exceeded my expectations.</b> Gratitude and acknowledgement to you, Cia,
+                            for
                             all you
                             that you are and all that you have done.</p>
                         <footer>Sachin Hazen, Life Coach, CT</footer>
@@ -471,9 +523,12 @@
             <div class="faq-content">
                 <div class="faq-item">
                     <p class="question">Q: Do I need prior experience with psychedelics to attend?</p>
-                    <p class="answer">It’s not necessary to have prior experience at all. You will be in a safe space,
-                        supported and guided, and in complete control of what you choose to partake in. You will have
-                        the opportunity to meet with Cia by phone before the retreat to ask any questions and discuss
+                    <p class="answer">It’s not necessary to have prior experience at all. You will be in a safe
+                        space,
+                        supported and guided, and in complete control of what you choose to partake in. You will
+                        have
+                        the opportunity to meet with Cia by phone before the retreat to ask any questions and
+                        discuss
                         what might be right for you.</p>
                 </div>
                 <div class="faq-item">
@@ -483,30 +538,39 @@
                 </div>
                 <div class="faq-item">
                     <p class="question">Q: What types of consciousness-altering substances are offered?</p>
-                    <p class="answer">There will be three different medicines available, both heart and mind-opening. If
+                    <p class="answer">There will be three different medicines available, both heart and
+                        mind-opening. If
                         you are new to any of them, you will have a choice of two. You can decide on which two when
-                        speaking with Cia. If you are already experienced with two of them, you might be approved for a
+                        speaking with Cia. If you are already experienced with two of them, you might be approved
+                        for a
                         combination. In some cases, if you have a very high tolerance, you may be given a
-                        non-hallucinogenic natural supplement to boost the effect of the conscious-altering substance.
+                        non-hallucinogenic natural supplement to boost the effect of the conscious-altering
+                        substance.
                         For more details please reach out to Cia to discuss by phone.</p>
                 </div>
                 <div class="faq-item">
                     <p class="question">Q: Can I decide later on if I’d like to partake in the psychedelics?</p>
-                    <p class="answer">Absolutely. Medicine is always optional. Even if you discuss in advance what you
-                        will try and a dose has been prepared for you, you can change your mind and opt-out at any time.
+                    <p class="answer">Absolutely. Medicine is always optional. Even if you discuss in advance what
+                        you
+                        will try and a dose has been prepared for you, you can change your mind and opt-out at any
+                        time.
                     </p>
                 </div>
                 <div class="faq-item">
                     <p class="question">Q: What is the cost of the retreat?</p>
                     <p class="answer">A fee schedule will be provided with your intake form. The fee for the retreat
-                        will be based on two things: 1. Whether you are coming for training or only for personal growth.
-                        2. What lodging (private, semi-private, bunk, or dorm) you select. In addition, discounts may
+                        will be based on two things: 1. Whether you are coming for training or only for personal
+                        growth.
+                        2. What lodging (private, semi-private, bunk, or dorm) you select. In addition, discounts
+                        may
                         apply for early enrollment, cash (non-credit card) payments, and referrals.</p>
                 </div>
                 <div class="faq-item">
                     <p class="question">Q: What is the cancellation policy?</p>
-                    <p class="answer">A 50% deposit is non-refundable but may be credited toward a future retreat if you
-                        need to cancel due to an emergency. The other 50% is fully refundable up to two weeks before the
+                    <p class="answer">A 50% deposit is non-refundable but may be credited toward a future retreat if
+                        you
+                        need to cancel due to an emergency. The other 50% is fully refundable up to two weeks before
+                        the
                         retreat.</p>
                 </div>
             </div>
@@ -577,7 +641,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column" id="nonprofit">
                     <h2>Cia Ricco's Nonprofit, </h2>
                     <a href="https://visionsanddreams.info/"><img src="img/Visions-and-Dreams-logo.png"
                             alt="Visions-and-Dreams-Logo" style="height:100px; margin: 20px;"></a>
@@ -615,24 +679,63 @@
 
     <!--gallery JS-->
     <script>
-        let currentSlide = 0;
-        const images = [
-            "img/bethel-ny-banner.webp",
-            "img/bethel-ny-stay.webp",
-            "img/bethel-ny-table.webp",
-            "img/bethel-ny.webp",
-            "img/bethel-ny-table.webp"
-        ];
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-        function changeSlide(direction) {
-            currentSlide += direction;
-            if (currentSlide >= images.length) {
-                currentSlide = 0;
-            } else if (currentSlide < 0) {
-                currentSlide = images.length - 1;
-            }
-            document.querySelector('.gallery-img').src = images[currentSlide];
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
         }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <!--sidebar JS-->
+    <script>
+        // Navbar dropdown menu functionality
+        let isClicked = false;
+
+        const dropdownBtn = document.querySelector('.dropdown-btn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        function toggleDropdownOnClick() {
+            isClicked = !isClicked;
+            dropdownContent.style.display = isClicked ? 'block' : 'none';
+        }
+
+        function showDropdownOnHover() {
+            dropdownContent.style.display = 'block';
+        }
+
+        function hideDropdownOnLeave() {
+            if (!isClicked) { // Hide on leave only if not clicked
+                setTimeout(function () {
+                    dropdownContent.style.display = 'none';
+                }, 5000); // Wait for 5000 milliseconds (5 seconds)
+            }
+        }
+
+
+        dropdownBtn.addEventListener('click', toggleDropdownOnClick);
+        dropdownBtn.addEventListener('mouseenter', showDropdownOnHover);
+        dropdownBtn.addEventListener('mouseleave', hideDropdownOnLeave);
+
+        // Adding an event to hide the dropdown when clicked outside
+        document.addEventListener('click', function (event) {
+            if (!dropdownBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+                dropdownContent.style.display = 'none';
+                isClicked = false;
+            }
+        });
     </script>
 </body>
 

@@ -1,19 +1,28 @@
-body{
+body {
     background-color: #ad3288;
     font-family: 'Lato', Arial, sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 700;
 }
 
-p, ul, li {
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+p,
+ul,
+li {
     font-family: 'Lato', Arial, sans-serif;
     font-weight: 400;
 }
 
-.content{
+.content {
     margin-left: 300px;
     background-image: url('../img/background.jpg');
     background-size: cover;
@@ -22,16 +31,41 @@ p, ul, li {
     background-attachment: fixed;
 }
 
-#content-section{
-    background-color: white;
-    width: 70%;
+#content-section {
+    background-color: rgba(255, 255, 255, 0.942);
+    width: 80%;
     margin: 50px auto;
     border-radius: 5px;
 }
 
-#content-section h2{
-    text-align: center;
+
+/*HEADER*/
+.retreat-header {
+    margin-bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
 }
+
+.retreat-box {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.retreat-content h1 {
+    background-color: rgb(255, 213, 59);
+    width: fit-content;
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+.retreat-content i {
+    background-color: rgb(255, 213, 59);
+    width: fit-content;
+    padding: 10px;
+}
+
 
 /*RSVP BANNER*/
 .cta-banner {
@@ -53,8 +87,8 @@ p, ul, li {
 }
 
 .cta-button {
-    background-color: white;
-    color: #347283;
+    background-color: #9bd5ff;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 1.2em;
@@ -63,37 +97,8 @@ p, ul, li {
 }
 
 .cta-button:hover {
-    background-color: #d8d2cc;
+    background-color: #66b6f1;
 }
-
-
-/*HEADER*/
-.retreat-header{
-    margin-bottom: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height:500px;
-}
-
-.retreat-box {
-    text-align: left;
-    margin: 0 auto;
-}
-
-.retreat-content h1 {
-    background-color: rgb(255, 200, 0);
-    width: fit-content;
-    font-size: 2.5em;
-    padding: 10px;
-}
-
-.retreat-content i{
-    background-color: rgb(255, 200, 0);
-    width: fit-content;
-    padding: 10px;
-}
-
 
 
 /*INTRO*/
@@ -104,14 +109,14 @@ p, ul, li {
 
 #lotus {
     margin: 0 auto;
-    width: 150px;
+    width: 200px;
 }
 
 .table {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .retreat-intro h1 {
@@ -141,16 +146,104 @@ p, ul, li {
     margin-top: 20px;
 }
 
-.emphasized-quote {
-    margin: 0 auto;
-    font-size: 1.2em;
-    font-style: italic;
-    max-width: 800px;
+
+
+.retreat-intro .emphasized-quote,
+.providers .emphasized-quote {
+    font-style: italic; 
+    font-size: 1.25em;
+    color:white;
+    background-color: rgb(255, 44, 132); /* Semi-transparent background for readability */
 }
 
 
-/*ITINERARY*/
+/* Retreat Details Section */
+.details-container {
+    margin: 0 auto;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.details-container .column {
+    flex: 1;
+    min-width: fit-content;
+}
+
+#right{
+    padding-left: 40px;
+    border-left: 2px dotted #c8c8c8; 
+}
+
+.details-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color for contrast */
+    text-align: left; /* Align column titles to the left */
+}
+
+.details-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333; /* Darker text color for contrast */
+}
+
+.details-container ul li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    text-align: left; /* Align list items to the left */
+}
+
+.add-ons-container {
+    margin-top: 20px;
+    text-align: center;
+    padding:10px;
+    background-color: #62ff0031;
+    border-radius: 5px;
+}
+
+.add-ons-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color for contrast */
+}
+
+.add-ons-container ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 0; /* Remove default padding */
+    list-style-type: none; /* Remove default list style */
+    gap: 20px; /* Space between items */
+}
+
+.add-ons-container ul li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    text-align: center; /* Center-align text */
+    flex: 1 1 30%; /* Flex item basis for equal width */
+}
+
+.add-ons-container ul li img {
+    display: block;
+    margin: 0 auto 5px; /* Center-align image and add margin */
+    width: 75px; /* Set icon size */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ITINERARY*/
 .schedule {
     display: flex;
     justify-content: space-between;
@@ -185,7 +278,6 @@ p, ul, li {
     justify-content: space-between;
     align-items: center;
     font-size: 1.5em;
-    color: #347283;
     margin: 0;
 }
 
@@ -201,22 +293,32 @@ p, ul, li {
     color: #FF7847;
 }
 
+.dates h2{
+    text-align: left;
+}
+
 .dates p,
 .dates ul {
-    text-align: center;
     margin-bottom: 20px;
-    font-size: 1.2em;
 }
+
 
 .dates ul {
     list-style-type: none;
+    text-align: center;
     padding: 0;
+    font-size: 1.25em;
 }
 
 .dates li {
     margin-bottom: 10px;
 }
 
+.extra{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #62ff0031;
+}
 
 /*OPTIONAL ACTIVITIES SECTION*/
 .optional-activities-section {
@@ -230,10 +332,7 @@ p, ul, li {
 }
 
 .optional-activities-container h2 {
-    font-size: 2em;
     margin-bottom: 20px;
-    text-align: center;
-    color: #347283;
 }
 
 .optional-activities-container ul {
@@ -260,10 +359,7 @@ p, ul, li {
 }
 
 .additional-fee-container h2 {
-    font-size: 2.5em;
     margin-bottom: 20px;
-    text-align: center;
-    color: #347283;
 }
 
 .additional-fee-container p {
@@ -285,8 +381,8 @@ p, ul, li {
 
 
 /*BENEFIT SECTION*/
+/* Base styles for larger screens */
 .benefit-section {
-    background-color: #f4f4f9;
     text-align: left;
 }
 
@@ -296,15 +392,11 @@ p, ul, li {
 }
 
 .benefit-container h2 {
-    font-size: 2.5em;
     margin-bottom: 20px;
-    text-align: center;
-    color: #347283;
 }
 
 .benefit-container p {
     font-size: 1.2em;
-    color: #555;
 }
 
 .benefit-category {
@@ -313,31 +405,31 @@ p, ul, li {
 
 .benefit-category h3 {
     font-size: 1.8em;
-    color: #347283;
     margin-bottom: 10px;
 }
 
 .benefit-category p {
     font-size: 1.2em;
-    color: #555;
     margin-bottom: 10px;
 }
 
-.benefit-columns {
+.column-container {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
 }
 
-.benefit-columns ul {
-    list-style-type: disc;
+.column-container ul {
+    flex: 1;
+    list-style-type: none;
     margin: 0;
-    padding: 0 20px;
-    width: 30%;
+    padding: 0;
 }
 
-.benefit-columns ul ul {
-    list-style-type: circle;
-    margin-left: 20px;
+.column-container ul ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 
@@ -360,7 +452,7 @@ p, ul, li {
 }
 
 .testimonial {
-    background: rgba(196, 196, 196, 0.34);
+    background: rgba(255, 127, 80, 0.237);
     border-radius: 5px;
     padding: 20px;
     width: 90%;
@@ -404,18 +496,18 @@ p, ul, li {
     text-align: right;
 }
 
-.testimonial img{
-    width:50px;
+.testimonial img {
+    width: 50px;
 }
 
-.testimonial p{
-    width:90%;
+.testimonial p {
+    width: 90%;
     margin: 0 auto;
-    padding-top:10px;
+    padding-top: 10px;
 }
 
-.testimonial footer{
-    padding:10px;
+.testimonial footer {
+    padding: 10px;
 }
 
 /*TRAVEL INFO*/
@@ -463,13 +555,14 @@ p, ul, li {
 
 
 /*REGISTRATION*/
-.registration{
-    background-color: rgb(255, 203, 214);
-    color:black;
+.registration {
+    background-color: coral;
+    color: white;
 }
 
-.registration a{
-    color:black;
+.registration a,
+.registration p {
+    color: white;
 }
 
 
@@ -485,7 +578,7 @@ p, ul, li {
 
 
 /*PROVIDERS*/
-.providers section{
+.providers section {
     margin: 0;
     padding: 0;
 }
@@ -495,8 +588,7 @@ p, ul, li {
 }
 
 .provider-banner {
-    background-color: #347283;
-    color: white;
+    background-color: rgb(255, 213, 59);
     padding: 20px;
     margin-bottom: 30px;
     display: flex;
@@ -518,7 +610,7 @@ p, ul, li {
 
 .provider-content {
     text-align: left;
-    width:90%;
+    width: 90%;
     margin: 0 auto;
 }
 

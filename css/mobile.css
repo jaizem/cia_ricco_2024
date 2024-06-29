@@ -1,0 +1,195 @@
+/*footer needs adjusted when minimized to 1024px for desktop*/
+/**/
+
+@media(min-width: 1024px) {
+    .sidebar {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #8fd7c3;
+        color: black;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+    }
+
+    .navbar .navbar-left {
+        position: absolute;
+        left: 0%;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-center {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        /* Ensures the center content is centered */
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown-btn {
+        font-size: 30px;
+        /* Adjust button size as needed */
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 20px;
+        padding-left: 40px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        width: 200px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgb(105, 162, 162);
+        color: black;
+    }
+
+    #logo {
+        width: 50px;
+    }
+
+    .book-appointment-btn {
+        background-color: coral;
+        border-style: dotted;
+        border-width: 5px;
+        border-color: pink;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .navbar-right a {
+        color: black;
+    }
+
+    .book-appointment-btn:hover {
+        background-color: rgb(218, 79, 29);
+        color: white;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .table {
+        flex-direction: column;
+    }
+    
+    .retreat-intro .column {
+        padding: 10px;
+    }
+    
+    .retreat-intro .column p,
+    .retreat-intro .column ul {
+        text-align: center;
+    }
+
+    .schedule {
+        flex-direction: column;
+    }
+    
+    .itinerary,
+    .dates {
+        max-width: 100%;
+    }
+    
+    .day h2 {
+        font-size: 1.2em;
+    }
+    
+    .day .toggle {
+        font-size: 1.2em;
+    }
+    
+    .dates h2 {
+        text-align: center;
+    }
+    
+    .dates ul {
+        text-align: left;
+    }
+
+    #gallery-img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .column-container {
+        flex-direction: column;
+    }
+
+    .column-container ul {
+        min-width: 100%;
+    }
+    
+    .travel-content {
+        flex-direction: column;
+    }
+
+    .travel-image {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .footer-container{
+        width:100%;
+        margin-left:0;
+        padding:0;
+        padding-bottom:5px;
+    }
+
+    .footer-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nonprofit{
+        display:none;
+    }
+
+    /*banner mobile*/
+
+}
+
+@media (max-width: 786px) {
+    /* Your phone-specific styles here */
+}
