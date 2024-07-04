@@ -554,7 +554,7 @@ li {
 .testimonial blockquote::before {
     content: '“';
     font-size: 3em;
-    color: #FF7847;
+    color: rgb(51, 51, 51);
     position: absolute;
     left: -10px;
     top: -10px;
@@ -563,7 +563,7 @@ li {
 .testimonial blockquote::after {
     content: '”';
     font-size: 3em;
-    color: #FF7847;
+    color: #494949;
     position: absolute;
     right: -10px;
     bottom: 10px;
