@@ -185,7 +185,7 @@ li {
 }
 
 #details{
-    list-style-type:;
+    list-style-type:none;
 }
 
 .massage{
@@ -644,6 +644,25 @@ li {
 .registration a,
 .registration p {
     color: white;
+}
+
+.registration-form a {
+    display: inline-block;
+    color:black;
+    background-color: #82e0e4;
+    padding: 10px 20px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    align-content: center;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.registration-form a#submit {
+    margin-left: 40px; /* Add margin to separate buttons */
 }
 
 
