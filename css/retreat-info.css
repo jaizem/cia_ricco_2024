@@ -32,7 +32,7 @@ li {
 }
 
 #content-section {
-    background-color: rgba(255, 255, 255, 0.942);
+    background-color: rgb(255, 220, 95);
     width: 80%;
     margin: 50px auto;
     border-radius: 5px;
@@ -42,7 +42,7 @@ li {
 /*HEADER*/
 .retreat-header {
     margin-bottom: 0;
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
@@ -64,6 +64,13 @@ li {
     background-color: rgb(255, 213, 59);
     width: fit-content;
     padding: 10px;
+}
+
+.retreat-content h2 {
+    width: fit-content;
+    padding: 5px;
+    background-color: #ff00b3;
+    margin-top:150px;
 }
 
 
@@ -150,10 +157,11 @@ li {
 
 .retreat-intro .emphasized-quote,
 .providers .emphasized-quote {
-    font-style: italic; 
+    font-style: italic;
     font-size: 1.25em;
-    color:white;
-    background-color: rgb(255, 44, 132); /* Semi-transparent background for readability */
+    color: white;
+    background-color: rgb(255, 44, 132);
+    /* Semi-transparent background for readability */
 }
 
 
@@ -171,72 +179,108 @@ li {
     min-width: fit-content;
 }
 
-#right{
+#right {
     padding-left: 40px;
-    border-left: 2px dotted #c8c8c8; 
+    border-left: 2px dotted #c8c8c8;
+}
+
+#details{
+    list-style-type:;
+}
+
+.massage{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .details-container h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #333; /* Darker text color for contrast */
-    text-align: left; /* Align column titles to the left */
+    color: #333;
+    /* Darker text color for contrast */
+    text-align: left;
+    /* Align column titles to the left */
 }
 
 .details-container ul {
     list-style-type: disc;
     padding-left: 20px;
-    color: #333; /* Darker text color for contrast */
+    color: #333;
+    /* Darker text color for contrast */
 }
 
 .details-container ul li {
     font-size: 1.1em;
     margin-bottom: 5px;
-    text-align: left; /* Align list items to the left */
+    text-align: left;
+    /* Align list items to the left */
 }
 
 .add-ons-container {
     margin-top: 20px;
     text-align: center;
-    padding:10px;
-    background-color: #62ff0031;
+    padding: 10px;
+    background-color: #008cff42;
     border-radius: 5px;
 }
 
 .add-ons-container h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #333; /* Darker text color for contrast */
+    color: #333;
+    /* Darker text color for contrast */
 }
 
 .add-ons-container ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-left: 0; /* Remove default padding */
-    list-style-type: none; /* Remove default list style */
-    gap: 20px; /* Space between items */
+    padding-left: 0;
+    /* Remove default padding */
+    list-style-type: none;
+    /* Remove default list style */
+    gap: 20px;
+    /* Space between items */
 }
 
 .add-ons-container ul li {
     font-size: 1.1em;
     margin-bottom: 5px;
-    text-align: center; /* Center-align text */
-    flex: 1 1 30%; /* Flex item basis for equal width */
+    text-align: center;
+    /* Center-align text */
+    flex: 1 1 30%;
+    /* Flex item basis for equal width */
 }
 
 .add-ons-container ul li img {
     display: block;
-    margin: 0 auto 5px; /* Center-align image and add margin */
-    width: 75px; /* Set icon size */
+    margin: 0 auto 5px;
+    /* Center-align image and add margin */
+    width: 75px;
+    /* Set icon size */
 }
 
 
+/*Accomodations*/
 
+.accomodations {
+    display: flex;
+    justify-content: space-between;
+}
 
+.rooms,
+.food {
+    flex: 1;
+    max-width: 50%;
+}
 
-
-
+.food {
+    padding-left:20px;
+    border-left-style: dotted;
+    border-width: 2px;
+    border-color: rgb(143, 143, 143);
+}
 
 
 
@@ -293,7 +337,7 @@ li {
     color: #FF7847;
 }
 
-.dates h2{
+.dates h2 {
     text-align: left;
 }
 
@@ -314,10 +358,10 @@ li {
     margin-bottom: 10px;
 }
 
-.extra{
+.extra {
     padding: 10px;
     border-radius: 5px;
-    background-color: #62ff0031;
+    background-color: #008cff42;
 }
 
 /*OPTIONAL ACTIVITIES SECTION*/
@@ -413,6 +457,20 @@ li {
     margin-bottom: 10px;
 }
 
+.benefit-category a{
+    display: block;
+    background-color: #66b6f1;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    color:#333;
+}
+
+#person-btn{
+    text-decoration: none;
+}
+
 .column-container {
     display: flex;
     justify-content: space-between;
@@ -452,7 +510,6 @@ li {
 }
 
 .testimonial {
-    background: rgba(255, 127, 80, 0.237);
     border-radius: 5px;
     padding: 20px;
     width: 90%;
@@ -462,6 +519,29 @@ li {
     flex-direction: column;
     align-items: center;
 }
+
+#one {
+    background-color: #82e0e4; /* Blue */
+}
+
+#two {
+    background-color: #51e469; /* Green */
+}
+
+#three {
+    background-color: #f1c40f; /* Yellow */
+}
+
+#four {
+    background-color: rgb(255, 160, 59); /* Orange */
+}
+
+#five {
+    background-color: #ff5b49; /* Red */
+}
+
+
+
 
 .testimonial blockquote {
     color: black;
@@ -509,6 +589,7 @@ li {
 .testimonial footer {
     padding: 10px;
 }
+
 
 /*TRAVEL INFO*/
 .travel-info {
@@ -588,8 +669,10 @@ li {
 }
 
 .provider-banner {
-    background-color: rgb(255, 213, 59);
+    background-color: #66b6f1;
+    border-radius: 5px;
     padding: 20px;
+    margin-top:10px;
     margin-bottom: 30px;
     display: flex;
     align-items: center;

@@ -7,6 +7,7 @@
     <title>Coming Soon</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/wip.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 </a>
             </div>
 
-            <a href="retreat-info.html">Upcoming Retreats</a>
+            <a href="index.html">Upcoming Retreats</a>
             <a href="coming-soon.html">Individual Intensives</a>
             <a href="coming-soon.html" id="BYOR" class="sidebar-link">
                 <p>BYOR! <i>Build Your Own Retreat</i></p>
@@ -34,21 +35,43 @@
             <a class="book-button" href="coming-soon.html">Book Session</a>
 
             <div class="media">
-                <a href="#read" class="media-item">
-
+                <a href="coming-soon.html" class="media-item">
                     <img src="img/read-icon.png" alt="Read Icon" class="media-icon">
                     <p>Read</p>
                 </a>
-                <a href="#watch" class="media-item">
-
+                <a href="coming-soon.html" class="media-item">
                     <img src="img/watch-icon.png" alt="Watch Icon" class="media-icon">
                     <p>Watch</p>
                 </a>
-                <a href="#listen" class="media-item">
-
+                <a href="coming-soon.html" class="media-item">
                     <img src="img/listen-icon.png" alt="Listen Icon" class="media-icon">
                     <p>Listen</p>
                 </a>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="navbar-left">
+                <button class="dropdown-btn">&#9776;</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Upcoming Retreats</a>
+                    <a href="coming-soon.html">Individual Intensives</a>
+                    <a href="coming-soon.html" id="BYOR" class="sidebar-link">
+                        <p>BYOR! <i>Build Your Own Retreat</i></p>
+                    </a><!--BYOR!-->
+                    <a href="coming-soon.html">Support Groups</a>
+                    <a href="coming-soon.html">Membership Courses</a>
+                    <a href="coming-soon.html">Teens in Need</a>
+                    <a href="coming-soon.html">About</a>
+                    <a href="coming-soon.html">Ask Cia</a>
+                    <a href="coming-soon.html">Contact</a>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a href="index.html"><!--img src="img/lotus-icon.png" alt="Cia Ricco Logo" id="logo"--></a>
+            </div>
+            <div class="navbar-right">
+                <a href="coming-soon.html" class="book-appointment-btn">BOOK</a>
             </div>
         </div>
 
@@ -56,11 +79,13 @@
             <div class="banner">
                 <div class="banner-content">
                     <h1>UPCOMING RETREAT IN BETHEL, NY</h1>
+                    <p style="margin:0;">An experiential psychedelic retreat for students and healers</p>
+                    <i>The original town of 1969's Woodstock!</i>
                     <p>September 26th - 30th</p>
-                    <a class="learn-more-button" href="retreat-info.html">Learn More</a>
+                    <a class="learn-more-button" href="index.html">LEARN MORE</a>
                 </div>
                 <div class="banner-image">
-                    <img src="img/bethel-ny-banner.webp">
+                    <img src="img/banner_Banner Art.png" alt="Bethel NY Retreat Image">
                 </div>
             </div>
 
@@ -70,6 +95,9 @@
                 <a href="index.html" id="clicky">
                     <h2><i>Return Home</i></h2>
                 </a>
+            </div>
+
+            <div class="spacer" style="height:50px;">
             </div>
         </div>
 
@@ -99,19 +127,17 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-column">
+                    <div class="footer-column" id="nonprofit">
                         <h2>Cia Ricco's Nonprofit, </h2>
                         <a href="https://visionsanddreams.info/"><img src="img/Visions-and-Dreams-logo.png"
-                                alt="Visions-and-Dreams Logo" style="height:150px; margin: 20px;"></a>
+                                alt="Visions-and-Dreams-Logo" style="height:100px; margin: 20px;"></a>
                     </div>
                 </div>
                 <div class="social-media">
-                    <a href="https://twitter.com/username" target="_blank"><img src="img/x-icon.webp" alt="X"
+                    <a href="" target="_blank"><img src="img/instagram.png" alt="Instagram" height="30"></a>
+                    <a href="" target="_blank"><img src="img/facebook.png" alt="Facebook" height="30"></a>
+                    <a href="coming-soon.html" target="_blank"><img src="img/ask-cia-05.png" alt="Ask Cia"
                             height="30"></a>
-                    <a href="https://www.linkedin.com/in/username" target="_blank"><img src="img/linked-in-icon.jpg"
-                            alt="LinkedIn" height="30"></a>
-                    <a href="https://www.psychologytoday.com/profile/username" target="_blank"><img
-                            src="img/psychology-today-icon.png" alt="Psychology Today" height="30"></a>
                 </div>
                 <div class="footer-bottom">
                     <p>&copy; 2024 Cia Ricco Psychotherapy. All rights reserved.</p>
@@ -119,6 +145,45 @@
             </div>
         </div>
     </div>
+
+    <!--sidebar JS-->
+    <script>
+        // Navbar dropdown menu functionality
+        let isClicked = false;
+
+        const dropdownBtn = document.querySelector('.dropdown-btn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        function toggleDropdownOnClick() {
+            isClicked = !isClicked;
+            dropdownContent.style.display = isClicked ? 'block' : 'none';
+        }
+
+        function showDropdownOnHover() {
+            dropdownContent.style.display = 'block';
+        }
+
+        function hideDropdownOnLeave() {
+            if (!isClicked) { // Hide on leave only if not clicked
+                setTimeout(function () {
+                    dropdownContent.style.display = 'none';
+                }, 5000); // Wait for 5000 milliseconds (5 seconds)
+            }
+        }
+
+
+        dropdownBtn.addEventListener('click', toggleDropdownOnClick);
+        dropdownBtn.addEventListener('mouseenter', showDropdownOnHover);
+        dropdownBtn.addEventListener('mouseleave', hideDropdownOnLeave);
+
+        // Adding an event to hide the dropdown when clicked outside
+        document.addEventListener('click', function (event) {
+            if (!dropdownBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+                dropdownContent.style.display = 'none';
+                isClicked = false;
+            }
+        });
+    </script>
 </body>
 
 </html>

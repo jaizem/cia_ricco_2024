@@ -1,6 +1,8 @@
 /*footer needs adjusted when minimized to 1024px for desktop*/
 /**/
 
+
+/*Desktop*/
 @media(min-width: 1024px) {
     .sidebar {
         display: block;
@@ -11,6 +13,7 @@
     }
 }
 
+/*Tablet*/
 @media (max-width: 1024px) {
     .sidebar {
         display: none;
@@ -113,37 +116,75 @@
     .table {
         flex-direction: column;
     }
-    
+
     .retreat-intro .column {
         padding: 10px;
     }
-    
+
     .retreat-intro .column p,
     .retreat-intro .column ul {
         text-align: center;
     }
 
+    #centered-list {
+        list-style-type: disc;
+        padding: 0;
+        display: inline-block;
+        text-align: left;
+        /* Align text to the left within the list items */
+    }
+
+    #centered-list li {
+        margin-bottom: 10px;
+        display: list-item;
+    }
+
+    #right{
+        padding: 0;
+        border-left-style: none;
+        border-top-style: dotted;
+        border-width: 2px;
+        border-color: rgb(143, 143, 143);
+    }
+
+    .accomodations {
+        flex-direction: column;
+    }
+
+    .food,
+    .rooms {
+        max-width: 100%;
+    }
+
+    .food {
+        padding: 0;
+        border-left-style: none;
+        border-top-style: dotted;
+        border-width: 2px;
+        border-color: rgb(143, 143, 143);
+    }
+
     .schedule {
         flex-direction: column;
     }
-    
+
     .itinerary,
     .dates {
         max-width: 100%;
     }
-    
+
     .day h2 {
         font-size: 1.2em;
     }
-    
+
     .day .toggle {
         font-size: 1.2em;
     }
-    
+
     .dates h2 {
         text-align: center;
     }
-    
+
     .dates ul {
         text-align: left;
     }
@@ -160,7 +201,7 @@
     .column-container ul {
         min-width: 100%;
     }
-    
+
     .travel-content {
         flex-direction: column;
     }
@@ -170,11 +211,11 @@
         margin-top: 20px;
     }
 
-    .footer-container{
-        width:100%;
-        margin-left:0;
-        padding:0;
-        padding-bottom:5px;
+    .footer-container {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        padding-bottom: 5px;
     }
 
     .footer-table {
@@ -182,14 +223,47 @@
         align-items: center;
     }
 
-    #nonprofit{
-        display:none;
+    #nonprofit {
+        display: none;
     }
 
     /*banner mobile*/
 
 }
 
-@media (max-width: 786px) {
-    /* Your phone-specific styles here */
+/*Mobile*/
+@media (max-width: 500px) {
+    .retreat-box{
+        font-size: 80%;
+    }
+
+    .title-box {
+        width: calc(width(retreat-content h1));
+        text-align: center;
+        padding:10px;
+        background-color: rgb(255, 213, 59);
+    }
+
+    .retreat-header i {
+        text-align: center;
+        font-size: 110%;
+        line-height: 2;
+    }
+
+    .retreat-content h2{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .content {
+        padding: 10px;
+    }
+    
+    .section{
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+        padding:0;
+    }
 }
