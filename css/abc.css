@@ -1,0 +1,85 @@
+.styled-paragraph {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.styled-paragraph div {
+    margin: 0;
+    padding: 20px 15%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.styled-paragraph p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.styled-paragraph p:first-letter {
+    font-size: 1.5em; /* 150% larger than the rest of the text */
+    font-family: 'Libre Baskerville', serif; /* Replace with your chosen font */
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px; /* Space between first letter and text */
+}
+
+.styled-paragraph .A { background-image: url('img/A.jpg'); }
+.styled-paragraph .B { background-image: url('img/B.jpg'); }
+.styled-paragraph .C { background-image: url('img/C.jpg'); }
+.styled-paragraph .D { background-image: url('img/D.jpg'); }
+.styled-paragraph .E { background-image: url('img/E.jpg'); }
+.styled-paragraph .F { background-image: url('img/F.jpg'); }
+.styled-paragraph .G { background-image: url('img/G.jpg'); }
+.styled-paragraph .H { background-image: url('img/H.jpg'); }
+.styled-paragraph .I { background-image: url('img/I.jpg'); }
+.styled-paragraph .J { background-image: url('img/J.jpg'); }
+.styled-paragraph .K { background-image: url('img/K.jpg'); }
+.styled-paragraph .L { background-image: url('img/L.jpg'); }
+.styled-paragraph .M { background-image: url('img/M.jpg'); }
+.styled-paragraph .N { background-image: url('img/N.jpg'); }
+.styled-paragraph .O { background-image: url('img/O.jpg'); }
+.styled-paragraph .P { background-image: url('img/P.jpg'); }
+.styled-paragraph .Q { background-image: url('img/Q.jpg'); }
+.styled-paragraph .R { background-image: url('img/R.jpg'); }
+.styled-paragraph .S { background-image: url('img/S.jpg'); }
+.styled-paragraph .T { background-image: url('img/T.jpg'); }
+.styled-paragraph .U { background-image: url('img/U.jpg'); }
+.styled-paragraph .V { background-image: url('img/V.jpg'); }
+.styled-paragraph .W { background-image: url('img/W.jpg'); }
+.styled-paragraph .X { background-image: url('img/X.jpg'); }
+.styled-paragraph .Y { background-image: url('img/Y.jpg'); }
+.styled-paragraph .Z { background-image: url('img/Z.jpg'); }
+
+
+.styled-paragraph .A { background-color: #FFDDC1; }
+.styled-paragraph .B { background-color: #FFABAB; }
+.styled-paragraph .C { background-color: #FFC3A0; }
+.styled-paragraph .D { background-color: #FF677D; }
+.styled-paragraph .E { background-color: #D4A5A5; }
+.styled-paragraph .F { background-color: #392F5A; }
+.styled-paragraph .G { background-color: #31A2AC; }
+.styled-paragraph .H { background-color: #61C0BF; }
+.styled-paragraph .I { background-color: #6B4226; }
+.styled-paragraph .J { background-color: #D9BF77; }
+.styled-paragraph .K { background-color: #ACD8AA; }
+.styled-paragraph .L { background-color: #FFE156; }
+.styled-paragraph .M { background-color: #6A0572; }
+.styled-paragraph .N { background-color: #AB83A1; }
+.styled-paragraph .O { background-color: #4A193E; }
+.styled-paragraph .P { background-color: #FFB2E6; }
+.styled-paragraph .Q { background-color: #1B2F33; }
+.styled-paragraph .R { background-color: #EFE2BA; }
+.styled-paragraph .S { background-color: #FFBD39; }
+.styled-paragraph .T { background-color: #FF6F59; }
+.styled-paragraph .U { background-color: #254E70; }
+.styled-paragraph .V { background-color: #3A405A; }
+.styled-paragraph .W { background-color: #8E8D8A; }
+.styled-paragraph .X { background-color: #9A8C98; }
+.styled-paragraph .Y { background-color: #4A4E69; }
+.styled-paragraph .Z { background-color: #22223B; }

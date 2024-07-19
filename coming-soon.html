@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/wip.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <script src="scripts/common.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVRHMS19G7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LVRHMS19G7');
+    </script>
 </head>
 
 <body>
@@ -32,7 +42,7 @@
             <a href="coming-soon.html">About</a>
             <a href="coming-soon.html">Ask Cia</a>
             <a href="coming-soon.html">Contact</a>
-            <a class="book-button" href="coming-soon.html">Book Session</a>
+            <a class="book-button" href="booking.html">Book Session</a>
 
             <div class="media">
                 <a href="coming-soon.html" class="media-item">
@@ -71,7 +81,7 @@
                 <a href="index.html"><!--img src="img/lotus-icon.png" alt="Cia Ricco Logo" id="logo"--></a>
             </div>
             <div class="navbar-right">
-                <a href="coming-soon.html" class="book-appointment-btn">BOOK</a>
+                <a href="booking.html" class="book-appointment-btn">BOOK</a>
             </div>
         </div>
 
@@ -107,11 +117,11 @@
                     <div class="footer-column">
                         <h2>Explore</h2>
                         <ul class="sitemap">
-                            <li><a href="#">Upcoming Events</a></li>
-                            <li><a href="#">Book Sessions Today</a></li>
-                            <li><a href="#">Read</a></li>
-                            <li><a href="#">Listen</a></li>
-                            <li><a href="#">Watch</a></li>
+                            <li><a href="retreat-info.html">Upcoming Events</a></li>
+                            <li><a href="booking.html">Book Sessions Today</a></li>
+                            <li><a href="coming-soon.html">Read</a></li>
+                            <li><a href="coming-soon.html">Listen</a></li>
+                            <li><a href="coming-soon.html">Watch</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -127,17 +137,19 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-column" id="nonprofit">
+                    <div class="footer-column">
                         <h2>Cia Ricco's Nonprofit, </h2>
                         <a href="https://visionsanddreams.info/"><img src="img/Visions-and-Dreams-logo.png"
-                                alt="Visions-and-Dreams-Logo" style="height:100px; margin: 20px;"></a>
+                                alt="Visions-and-Dreams Logo" style="height:150px; margin: 20px;"></a>
                     </div>
                 </div>
                 <div class="social-media">
-                    <a href="" target="_blank"><img src="img/instagram.png" alt="Instagram" height="30"></a>
-                    <a href="" target="_blank"><img src="img/facebook.png" alt="Facebook" height="30"></a>
-                    <a href="coming-soon.html" target="_blank"><img src="img/ask-cia-05.png" alt="Ask Cia"
+                    <a href="https://twitter.com/username" target="_blank"><img src="img/x-icon.webp" alt="X"
                             height="30"></a>
+                    <a href="https://www.linkedin.com/in/username" target="_blank"><img src="img/linked-in-icon.jpg"
+                            alt="LinkedIn" height="30"></a>
+                    <a href="https://www.psychologytoday.com/profile/username" target="_blank"><img
+                            src="img/psychology-today-icon.png" alt="Psychology Today" height="30"></a>
                 </div>
                 <div class="footer-bottom">
                     <p>&copy; 2024 Cia Ricco Psychotherapy. All rights reserved.</p>
@@ -146,44 +158,6 @@
         </div>
     </div>
 
-    <!--sidebar JS-->
-    <script>
-        // Navbar dropdown menu functionality
-        let isClicked = false;
-
-        const dropdownBtn = document.querySelector('.dropdown-btn');
-        const dropdownContent = document.querySelector('.dropdown-content');
-
-        function toggleDropdownOnClick() {
-            isClicked = !isClicked;
-            dropdownContent.style.display = isClicked ? 'block' : 'none';
-        }
-
-        function showDropdownOnHover() {
-            dropdownContent.style.display = 'block';
-        }
-
-        function hideDropdownOnLeave() {
-            if (!isClicked) { // Hide on leave only if not clicked
-                setTimeout(function () {
-                    dropdownContent.style.display = 'none';
-                }, 5000); // Wait for 5000 milliseconds (5 seconds)
-            }
-        }
-
-
-        dropdownBtn.addEventListener('click', toggleDropdownOnClick);
-        dropdownBtn.addEventListener('mouseenter', showDropdownOnHover);
-        dropdownBtn.addEventListener('mouseleave', hideDropdownOnLeave);
-
-        // Adding an event to hide the dropdown when clicked outside
-        document.addEventListener('click', function (event) {
-            if (!dropdownBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
-                dropdownContent.style.display = 'none';
-                isClicked = false;
-            }
-        });
-    </script>
 </body>
 
 </html>

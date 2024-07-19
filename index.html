@@ -7,6 +7,17 @@
     <title>Cia Ricco</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="scripts/common.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVRHMS19G7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LVRHMS19G7');
+    </script>
 </head>
 
 <body>
@@ -15,12 +26,10 @@
             <div class="logo">
                 <a href="index.html">
                     <img src="img/logo-icon.png" alt="Cia Ricco Logo">
-                    <p>Cia Ricco</p>
-                    <i>Healing Services</i>
                 </a>
             </div>
-    
-            <a href="index.html">Upcoming Retreats</a>
+
+            <a href="retreat-info.html">Upcoming Retreats</a>
             <a href="coming-soon.html">Individual Intensives</a>
             <a href="coming-soon.html" id="BYOR" class="sidebar-link">
                 <p>BYOR! <i>Build Your Own Retreat</i></p>
@@ -28,13 +37,13 @@
             <a href="coming-soon.html">Support Groups</a>
             <a href="coming-soon.html">Membership Courses</a>
             <a href="coming-soon.html">Teens in Need</a>
-            <a href="coming-soon.html">About</a>
+            <a href="about.html">About</a>
             <a href="coming-soon.html">Ask Cia</a>
             <a href="coming-soon.html">Contact</a>
-            <a class="book-button" href="coming-soon.html">Book Session</a>
-    
+            <a class="book-button" href="booking.html">Book Session</a>
+
             <div class="media">
-                <a href="coming-soon.html" class="media-item">
+                <a href="read.html" class="media-item">
                     <img src="img/read-icon.png" alt="Read Icon" class="media-icon">
                     <p>Read</p>
                 </a>
@@ -48,12 +57,12 @@
                 </a>
             </div>
         </div>
-    
+
         <div class="navbar">
             <div class="navbar-left">
                 <button class="dropdown-btn">&#9776;</button>
                 <div class="dropdown-content">
-                    <a href="index.html">Upcoming Retreats</a>
+                    <a href="retreat-info.html">Upcoming Retreats</a>
                     <a href="coming-soon.html">Individual Intensives</a>
                     <a href="coming-soon.html" id="BYOR" class="sidebar-link">
                         <p>BYOR! <i>Build Your Own Retreat</i></p>
@@ -70,11 +79,11 @@
                 <a href="index.html"><!--img src="img/lotus-icon.png" alt="Cia Ricco Logo" id="logo"--></a>
             </div>
             <div class="navbar-right">
-                <a href="coming-soon.html" class="book-appointment-btn">BOOK</a>
+                <a href="booking.html" class="book-appointment-btn">BOOK</a>
             </div>
         </div>
 
-        <div class="content" style="background-image: url('img/ginkgo.png');">
+        <div class="content">
             <div class="banner">
                 <div class="banner-content">
                     <h1>UPCOMING RETREAT IN BETHEL, NY</h1>
@@ -88,92 +97,74 @@
                 </div>
             </div>
 
-            <section class="video-intro">
-                <div class="intro-left">
-                    <h1>Cia Ricco</h1>
-                    <h2><i>Therapist, Teacher, and Author</i></h2>
-                    <p>Cia on body centered therapy, also known as somatic healing.</p>
-                    <p>Body-centered therapy, also known as somatic healing, is a powerful approach to psychotherapy
-                        that integrates the mind and body to address trauma and promote healing. Cia Ricco explains,
-                        "Our bodies hold onto past traumas and emotions. By reconnecting with our physical selves, we
-                        can release these stored experiences and achieve a deeper sense of peace and well-being." This
-                        method allows individuals to process and release stored trauma, fostering self-awareness and
-                        holistic healing.</p>
-                    <img src="img/leaf-motif.png" id="leaf-motif">
-                </div>
-                <div class="intro-right">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0"
-                        allowfullscreen></iframe>
-                    <p><a href="#" class="transcript-link"><i>Click for video transcript</i></a></p>
-                </div>
+            <!--
+            <section class="intro-hero" style="background-image: url('img/intro-hero.jpg');">
+                <h1>Cia Ricco</h1>
+                <h2>Therapist, Teacher, Author <i>(and More…)</i></h2>
             </section>
-
-            <section class="info">
-                <div class="info-container">
-                    <h1>What is Somatic Therapy?</h1>
-                    <div class="info-content">
-                        <div class="info-item">
-                            <h3>What is the Benefit to Body Centered Healing?</h3>
-                            <p>Somatic therapy is a gentle yet profound approach that honors the deep connection between
-                                our minds and bodies. It acknowledges that our bodies hold onto past experiences and
-                                traumas, and through mindful awareness and therapeutic techniques, it helps release
-                                these stored emotions. This holistic method promotes healing by encouraging us to listen
-                                to our bodies and embrace the wisdom they hold.</p>
-                        </div>
-                        <div class="info-item">
-                            <h3>How is a Heart-Centered Approach Different?</h3>
-                            <p>A heart-centered approach is rooted in compassion and empathy. It focuses on creating a
-                                safe and nurturing space where you can feel truly seen and heard. By fostering a deep
-                                sense of connection and understanding, this approach helps you connect with your
-                                authentic self, facilitating profound emotional healing and personal growth.</p>
-                        </div>
-                        <div class="info-item">
-                            <h3>What to Expect from Your Work with Cia?</h3>
-                            <p>Working with Cia Ricco is a deeply transformative experience. With over 40 years of
-                                experience, Cia combines somatic and heart-centered techniques to guide you on your
-                                healing journey. You can expect a personalized approach that respects your unique needs,
-                                incorporating body-centered exercises, mindfulness practices, and compassionate
-                                dialogue. Cia's wisdom and empathy create a supportive environment where you can
-                                explore, heal, and grow.</p>
-                        </div>
+-->
+            <section class="intro">
+                <h1>Cia Ricco</h1>
+                <h2>Therapist, Teacher, Author <i>(and More…)</i></h2>
+                <div class="video-intro">
+                    <div class="intro-left">
+                        <p><i id="fancy">Welcome</i> to the online home of Cia Ricco, an expert on body-centered
+                            (somatic) psychotherapy,
+                            who has studied the practice since its early formation in the late 1970s. With over four
+                            decades of experience, Cia has dedicated her life to helping individuals heal, grow, and
+                            transform. Her profound understanding of the human mind and body, coupled with her
+                            compassionate approach, has earned her the title of a miracle worker.
+                        </p>
+                        <img src="img/leaf-motif.png" id="leaf-motif">
+                    </div>
+                    <div class="intro-right">
+                        <video width="500" height="auto" controls>
+                            <source src="img/cia-intro.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p><a href="" class="transcript-link"><i>Click for video transcript</i></a></p>
                     </div>
                 </div>
             </section>
 
-            <div class="services-container">
+            <section class="transform">
+                <div class="transform-content">
+                    <h2>Transform Your Life...</h2>
+                    <p>Working with Cia Ricco is a deeply transformative experience. Cia blends somatic therapy with
+                        heart-centered techniques, life coaching, and traditional psychotherapy methods such as DBT,
+                        to guide you on your healing journey. You can expect a personalized approach that aligns
+                        with your unique needs, incorporating body-centered exercises, mindfulness practices, and
+                        compassionate dialogue. Cia's wisdom and empathy create a supportive environment where you
+                        can explore, heal, and grow.
+                    </p>
+                </div>
+
+                <div class="intro-two-left">
+                    <h2 id="transform-header">and Join a Legacy of Healing and Growth</h2>
+                    <p>This website is Cia’s legacy—a space to share her wealth of knowledge, offer services, and
+                        continue making a positive impact on the lives of many.
+                    </p>
+                    <p>
+                        We invite you to explore the resources available here, learn more about Cia’s journey, and
+                        discover how her decades of expertise can support your own path to healing and growth.
+                    </p>
+                    <p id="about-btn"><a href="coming-soon.html">Learn More Here</a></p>
+                </div>
+            </section>
+
+            <section class="services-container">
                 <h1>Popular Services</h1>
                 <div class="services">
                     <div class="service-box">
                         <div class="service-image">
-                            <img src="img/individidual-service.png" alt="Individual Intensives">
+                            <img src="img/zoom-session.png" alt="Individual Therapy">
                         </div>
                         <div class="service-content">
-                            <h3>Individual Intensives</h3>
-                            <p>Cia’s individual intensives range from 3 days up to a month. These sessions are flexible:
-                                Cia can travel to your location or you can stay with her for a more personalized
-                                experience.</p>
-                        </div>
-                    </div>
-                    <div class="service-box">
-                        <div class="service-image">
-                            <img src="img/group-service-2.png" alt="Group Workshops">
-                        </div>
-                        <div class="service-content">
-                            <h3>Group Workshops</h3>
-                            <p>Choose from a list of suggested topics or bring your own, attend locally in Florida, or
-                                have Cia travel to your group’s location. Cia’s group workshops are fully customizable
-                                to meet your needs.</p>
-                        </div>
-                    </div>
-                    <div class="service-box">
-                        <div class="service-image">
-                            <img src="img/support-service-2.png" alt="Support Groups">
-                        </div>
-                        <div class="service-content">
-                            <h3>Support Groups</h3>
-                            <p>Join open support groups such as <a href="coming-soon.html"><b>Living, Aging, and
-                                        Dying</b></a> which offers support for senescence, or create your own support
-                                group with Cia’s help for a more tailored fit.</p>
+                            <h3>Individual Coaching Therapy</h3>
+                            <p>Cia's approach combines life coaching and body-centered (somatic) therapy, with
+                                traditional methods such as DBT to address mental health concerns, ensuring a holistic
+                                therapeutic experience. Individual sessions are available via phone or Zoom.
+                            </p>
                         </div>
                     </div>
                     <div class="service-box">
@@ -183,23 +174,52 @@
                         <div class="service-content">
                             <h3>Couples Therapy</h3>
                             <p>Choose to grow as you learn from Cia’s body centered healing, and welcome new
-                                perspectives into your relationship. Cia’s couples sessions are available in person or
+                                perspectives into your relationship. Cia’s couples sessions are available in person
+                                or
                                 via Zoom.</p>
                         </div>
                     </div>
                     <div class="service-box">
                         <div class="service-image">
-                            <img src="img/zoom-session.png" alt="Individual Therapy">
+                            <img src="img/group-service-2.png" alt="Group Workshops">
                         </div>
                         <div class="service-content">
-                            <h3>Individual Therapy</h3>
-                            <p>Cia's approach combines life coaching with somatic healing to address mental health
-                                concerns, ensuring a holistic therapeutic experience. Individual sessions are available
-                                via phone, Zoom, or in person.</p>
+                            <h3>Retreats</h3>
+                            <p>Choose from a list of suggested topics or bring your own, attend locally in Florida,
+                                or
+                                have Cia travel to your group’s location. Cia’s group workshops are fully
+                                customizable
+                                to meet your needs.</p>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-image">
+                            <img src="img/support-service-2.png" alt="Support Groups">
+                        </div>
+                        <div class="service-content">
+                            <h3>Support Groups</h3>
+                            <p>Cia offers virtual support groups via Zoom. You can invite your friends and model your
+                                sessions after past examples, such as “Living, Aging, and Dying,” a support group
+                                focused on senescence. You can also create your own group with Cia’s help for a more
+                                tailored fit.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="service-box">
+                        <div class="service-image">
+                            <img src="img/individidual-service.png" alt="Individual Intensives">
+                        </div>
+                        <div class="service-content">
+                            <h3>Individual Intensives</h3>
+                            <p>Cia’s individual intensives range from 3 days up to a month. These sessions are
+                                flexible:
+                                Cia can travel to your location or you can stay with her for a more personalized
+                                experience.</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <section class="credentials">
                 <div class="credentials-container">
@@ -207,52 +227,63 @@
                     <div class="credentials-content">
                         <div class="credential-item">
                             <h2>40+ Years Experience</h2>
-                            <h3>Hands-on Learning</h3>
-                            <p>Most importantly, Cia believes in learning by doing. Her extensive hands-on experience
-                                has been instrumental in developing her unique therapeutic methods. Cia Ricco has over
-                                four decades of experience in body-centered psychotherapy, helping countless individuals
+                            <p>Most importantly, Cia believes in learning by doing. Her extensive hands-on
+                                experience
+                                has been instrumental in developing her unique therapeutic methods. Cia Ricco has
+                                over
+                                four decades of experience in body-centered psychotherapy, helping countless
+                                individuals
                                 on their journey to healing and growth.</p>
                         </div>
                         <div class="credential-item">
                             <h2>Teaching</h2>
-                            <h3>Kripalu Center</h3>
-                            <p>Cia has been a regular teacher at the prestigious Kripalu Center for Yoga & Health,
-                                sharing her expertise with a wide audience.</p>
-                            <h3>Omega Institute</h3>
-                            <p>She has taught numerous workshops at the Omega Institute in New York, known for its
-                                holistic approach to wellness and personal growth.</p>
+                            <p>Cia has taught extensively at the Kripalu Center for Yoga & Health, sharing her expertise
+                                with a wide audience. She has also led workshops at other holistic centers for growth,
+                                including the Omega Institute, the Wainwright House, and the New York Open Center.
+                            </p>
                         </div>
                         <div class="credential-item">
                             <h2>Studies</h2>
-                            <h3>Hendricks Institute</h3>
-                            <p>Cia has studied under the renowned Gay and Kathlyn Hendricks at the Hendricks Institute,
-                                enhancing her skills in body-centered therapy and conscious living.</p>
-                            <h3>Training with Robert Gass</h3>
-                            <p>Her training includes workshops with Robert Gass, further enriching her approach to
-                                transformative practices.</p>
+                            <p>Cia has studied under pioneers in the field of somatic therapy, including the renowned
+                                Gay and Kathlyn Hendricks at the Hendricks Institute. She has attended embodiment
+                                workshops led by Douglas Brady and studied Robert Gass’s curriculum at Springhill, and
+                                is trained in Hakomi therapy—the precursor to modern somatic therapeutic
+                                approaches—along with other materials by Ron Kurtz.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <section class="booking-section">
+                <div class="booking-container">
+                    <h2>Book a Session</h2>
+                    <p>To book a session, click the link below to view our calendar and select a time that works
+                        best
+                        for you. We look forward to helping you on your journey to healing and self-discovery.</p>
+                    <a href="booking.html" class="booking-button">View Our Calendar</a>
+                </div>
+            </section>
+
+
             <section class="testimonials">
                 <div class="testimonials-container">
                     <h1>What Clients Have to Say</h1>
                     <div class="testimonial-box">
-                        <p><strong>“Transformative experience!”</strong> Working with Cia has profoundly changed my
-                            life. Her somatic healing techniques helped me overcome years of trauma and find peace.</p>
+                        <p><strong>“I am so grateful for this work and the caring attention I received.”</strong>
+                        </p>
                         <div class="testimonial-author">
                             <img src="img/user-icon.webp" alt="Author 1">
-                            <p>Mary Johnson, Client</p>
+                            <p>Anna Kolp, LMSW, NYC</p>
                         </div>
                     </div>
                     <div class="testimonial-box">
-                        <p><strong>“A healer with deep wisdom.”</strong> Cia's heart-centered approach and vast
-                            experience in somatic therapy make her a truly exceptional therapist. I always feel safe and
-                            understood.</p>
+                        <p><strong>“Cia’s love is abundant and unmatched.”</strong> Thank you for opening up the
+                            doors
+                            to this new way of seeing life.</p>
                         <div class="testimonial-author">
                             <img src="img/user-icon.webp" alt="Author 2">
-                            <p>James Brown, Client</p>
+                            <p>Jessenia Acuna, LCSW, Palm Beach</p>
                         </div>
                     </div>
                 </div>
@@ -262,7 +293,7 @@
                 </div>
             </section>
 
-            <div class="archive-container">
+            <section class="archive-container">
                 <h1>Cia's Archive</h1>
                 <div class="archive-content">
                     <div class="archive">
@@ -283,7 +314,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
 
         <div class="footer-container">
@@ -292,11 +323,11 @@
                     <div class="footer-column">
                         <h2>Explore</h2>
                         <ul class="sitemap">
-                            <li><a href="#">Upcoming Events</a></li>
-                            <li><a href="#">Book Sessions Today</a></li>
-                            <li><a href="#">Read</a></li>
-                            <li><a href="#">Listen</a></li>
-                            <li><a href="#">Watch</a></li>
+                            <li><a href="retreat-info.html">Upcoming Events</a></li>
+                            <li><a href="booking.html">Book Sessions Today</a></li>
+                            <li><a href="coming-soon.html">Read</a></li>
+                            <li><a href="coming-soon.html">Listen</a></li>
+                            <li><a href="coming-soon.html">Watch</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -315,14 +346,16 @@
                     <div class="footer-column">
                         <h2>Cia Ricco's Nonprofit, </h2>
                         <a href="https://visionsanddreams.info/"><img src="img/Visions-and-Dreams-logo.png"
-                                alt="Visions-and-Dreams-Logo" style="height:100px; margin: 20px;"></a>
+                                alt="Visions-and-Dreams Logo" style="height:150px; margin: 20px;"></a>
                     </div>
                 </div>
                 <div class="social-media">
-                    <a href="" target="_blank"><img src="img/instagram.png" alt="Instagram" height="30"></a>
-                    <a href="" target="_blank"><img src="img/facebook.png" alt="Facebook" height="30"></a>
-                    <a href="coming-soon.html" target="_blank"><img src="img/ask-cia-05.png" alt="Ask Cia"
+                    <a href="https://www.facebook.com/cia.ricco.5/" target="_blank"><img src="img/facebook.png" alt="Facebook"
                             height="30"></a>
+                    <a href="https://www.linkedin.com/in/username" target="_blank"><img src="img/instagram.png"
+                            alt="Instagram" height="30"></a>
+                    <a href="https://www.psychologytoday.com/profile/username" target="_blank"><img
+                            src="img/ask-cia-05.png" alt="Ask Cia" height="30"></a>
                 </div>
                 <div class="footer-bottom">
                     <p>&copy; 2024 Cia Ricco Psychotherapy. All rights reserved.</p>

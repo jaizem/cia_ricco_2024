@@ -42,7 +42,7 @@ li {
 /*HEADER*/
 .retreat-header {
     margin-bottom: 0;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
@@ -70,7 +70,7 @@ li {
     width: fit-content;
     padding: 5px;
     background-color: #ff00b3;
-    margin-top:150px;
+    margin-top: 150px;
 }
 
 
@@ -184,11 +184,11 @@ li {
     border-left: 2px dotted #c8c8c8;
 }
 
-#details{
-    list-style-type:none;
+#details {
+    list-style-type: none;
 }
 
-.massage{
+.massage {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
@@ -276,7 +276,7 @@ li {
 }
 
 .food {
-    padding-left:20px;
+    padding-left: 20px;
     border-left-style: dotted;
     border-width: 2px;
     border-color: rgb(143, 143, 143);
@@ -457,17 +457,17 @@ li {
     margin-bottom: 10px;
 }
 
-.benefit-category a{
+.benefit-category a {
     display: block;
     background-color: #66b6f1;
     width: fit-content;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    color:#333;
+    color: #333;
 }
 
-#person-btn{
+#person-btn {
     text-decoration: none;
 }
 
@@ -521,23 +521,28 @@ li {
 }
 
 #one {
-    background-color: #82e0e4; /* Blue */
+    background-color: #82e0e4;
+    /* Blue */
 }
 
 #two {
-    background-color: #51e469; /* Green */
+    background-color: #51e469;
+    /* Green */
 }
 
 #three {
-    background-color: #f1c40f; /* Yellow */
+    background-color: #f1c40f;
+    /* Yellow */
 }
 
 #four {
-    background-color: rgb(255, 160, 59); /* Orange */
+    background-color: rgb(255, 160, 59);
+    /* Orange */
 }
 
 #five {
-    background-color: #ff5b49; /* Red */
+    background-color: #ff5b49;
+    /* Red */
 }
 
 
@@ -648,7 +653,7 @@ li {
 
 .registration-form a {
     display: inline-block;
-    color:black;
+    color: black;
     background-color: #82e0e4;
     padding: 10px 20px;
     height: 30px;
@@ -662,7 +667,8 @@ li {
 }
 
 .registration-form a#submit {
-    margin-left: 40px; /* Add margin to separate buttons */
+    margin-left: 40px;
+    /* Add margin to separate buttons */
 }
 
 
@@ -691,7 +697,7 @@ li {
     background-color: #66b6f1;
     border-radius: 5px;
     padding: 20px;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -747,4 +753,148 @@ li {
     max-width: 800px;
     margin: 30px auto 0;
     width: calc(100% - 40px);
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 1024px) {
+    .table {
+        flex-direction: column;
+    }
+
+    .retreat-intro .column {
+        padding: 10px;
+    }
+
+    .retreat-intro .column p,
+    .retreat-intro .column ul {
+        text-align: center;
+    }
+
+    #centered-list {
+        list-style-type: disc;
+        padding: 0;
+        display: inline-block;
+        text-align: left;
+        /* Align text to the left within the list items */
+    }
+
+    #centered-list li {
+        margin-bottom: 10px;
+        display: list-item;
+    }
+
+    #right {
+        padding: 0;
+        border-left-style: none;
+        border-top-style: dotted;
+        border-width: 2px;
+        border-color: rgb(143, 143, 143);
+    }
+
+    .accomodations {
+        flex-direction: column;
+    }
+
+    .food,
+    .rooms {
+        max-width: 100%;
+    }
+
+    .food {
+        padding: 0;
+        border-left-style: none;
+        border-top-style: dotted;
+        border-width: 2px;
+        border-color: rgb(143, 143, 143);
+    }
+
+    .schedule {
+        flex-direction: column;
+    }
+
+    .itinerary,
+    .dates {
+        max-width: 100%;
+    }
+
+    .day h2 {
+        font-size: 1.2em;
+    }
+
+    .day .toggle {
+        font-size: 1.2em;
+    }
+
+    .dates h2 {
+        text-align: center;
+    }
+
+    .dates ul {
+        text-align: left;
+    }
+
+    #gallery-img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .column-container {
+        flex-direction: column;
+    }
+
+    .column-container ul {
+        min-width: 100%;
+    }
+
+    .travel-content {
+        flex-direction: column;
+    }
+
+    .travel-image {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .footer-container {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+
+    .footer-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nonprofit {
+        display: none;
+    }
+
+    /*banner mobile*/
+
+}
+
+@media (max-width: 500px) {
+    .retreat-box{
+        font-size: 80%;
+    }
+
+    .title-box {
+        width: calc(width(retreat-content h1));
+        text-align: center;
+        padding:10px;
+        background-color: rgb(255, 213, 59);
+    }
+
+    .retreat-header i {
+        text-align: center;
+        font-size: 110%;
+        line-height: 2;
+    }
+
+    .retreat-content h2{
+        margin-top: 20px;
+    }
 }

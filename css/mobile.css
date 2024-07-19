@@ -111,6 +111,7 @@
 
     .content {
         margin-left: 0;
+        
     }
 
     .table {
@@ -228,31 +229,13 @@
     }
 
     /*banner mobile*/
+    
 
 }
 
 /*Mobile*/
 @media (max-width: 500px) {
-    .retreat-box{
-        font-size: 80%;
-    }
-
-    .title-box {
-        width: calc(width(retreat-content h1));
-        text-align: center;
-        padding:10px;
-        background-color: rgb(255, 213, 59);
-    }
-
-    .retreat-header i {
-        text-align: center;
-        font-size: 110%;
-        line-height: 2;
-    }
-
-    .retreat-content h2{
-        margin-top: 20px;
-    }
+  /**/
 }
 
 @media (max-width: 425px) {
@@ -260,10 +243,13 @@
         padding: 10px;
     }
     
-    .section{
-        width: 100%;
-        height: auto;
+    section{
         margin: 5px 0;
-        padding:0;
+        padding: 10px;
+    }
+
+    #gallery-img {
+        max-width: 200px;
+        height: auto;
     }
 }
