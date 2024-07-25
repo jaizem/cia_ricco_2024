@@ -139,20 +139,16 @@ section{
 
 .calendar{
     background-color: #91cac2; 
-    padding-top:20px;
-}
-
-.calendar iframe{
-    width: 100%;
-    height: 800px;
-    margin: 0 auto;
-    border-style:none;
-    border-radius:5px;
-    background-color: white;
+    height: fit-content;
 }
 
 .billing{
-    background-color: #7fc2b9;
+    background-color: #ff4b8d;
+    border-bottom-style: solid;
+    border-width:15px;
+    border-color:#ff7aab;
+    color:black;
+    padding:20px;
     font-size:1.25em;
     text-align: center;
 }
@@ -168,10 +164,6 @@ section{
         background-color: #7fc2b9;
     }
     
-    section{
-        border-radius: 5px;
-    }
-
     .info, .image {
         flex: 0 0 100%; /* Take up 100% of the container on mobile */
         margin-right: 0; /* Remove margin between columns */
