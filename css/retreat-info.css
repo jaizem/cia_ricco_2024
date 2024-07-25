@@ -164,6 +164,16 @@ li {
     /* Semi-transparent background for readability */
 }
 
+.cta-link{
+    text-align: center;
+}
+
+@media(min-width: 1024px) {
+    .calendly-inline-widget {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 
 /* Retreat Details Section */
 .details-container {
@@ -195,12 +205,12 @@ li {
     font-size: 1.1em;
 }
 
-.massage-contact{
+.massage-contact {
     text-align: center;
     font-size: 1.5em;
 }
 
-#massage-contact{
+#massage-contact {
     background-color: #008cff42;
     padding: 10px;
     border-radius: 5px;
@@ -890,14 +900,14 @@ li {
 }
 
 @media (max-width: 500px) {
-    .retreat-box{
+    .retreat-box {
         font-size: 80%;
     }
 
     .title-box {
         width: calc(width(retreat-content h1));
         text-align: center;
-        padding:10px;
+        padding: 10px;
         background-color: rgb(255, 213, 59);
     }
 
@@ -907,7 +917,7 @@ li {
         line-height: 2;
     }
 
-    .retreat-content h2{
+    .retreat-content h2 {
         margin-top: 20px;
     }
 }
